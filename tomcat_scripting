@@ -16,6 +16,8 @@ mv apache-tomcat-7.0.92 /opt/tomcat
 chmod -R 755 /opt/tomcat/
 rm -rf /opt/tomcat/webapps/*
 /opt/tomcat/bin/startup.sh
+wget https://updates.jenkins-ci.org/download/war/2.133/jenkins.war
+cp jenkins.war /opt/tomcat/webapps/
 wget http://www-us.apache.org/dist/maven/maven-3/3.5.4/binaries/apache-maven-3.5.4-bin.zip
 unzip apache-maven-3.5.4-bin.zip
 mv apache-maven-3.5.4 maven
